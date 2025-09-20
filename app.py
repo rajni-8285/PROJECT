@@ -3,19 +3,22 @@ from flask_mysqldb import MySQL
 import google.generativeai as genai
 import os
 
+password = os.getenv("DB_PASSWORD")
+
+
 app = Flask(__name__)
 
 # MySQL Configuration
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '1234'
+
 app.config['MYSQL_DB'] = 'menstrual_health'
 
 mysql = MySQL(app)
 
 
 
-genai.configure(api_key="AIzaSyCjHVYfvIG8Yx8e14fkfzgbBti-cCSyUZk")
+gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 @app.route('/index')
 def index():
