@@ -1,0 +1,112 @@
+body {
+  background-image: url("../static/calm_girls/hii.jpg");
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.spinner {
+  border: 6px solid white;
+  border-top: 6px solid #db34ae;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.result-box {
+    background-color: #ffccee;
+    border: 5px solid rgb(222, 60, 239);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family:'Times New Roman', Times, serif,sans-serif;
+    font-size:  25px;
+    color: rgb(0, 0, 0);
+    font: optional;
+}
+
+
+.feedback-box {
+  background-color: whitesmoke;
+  border: 5px solid rgb(196, 196, 233);
+  border-radius: 20px;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feedback-box h2 {
+  color: #6d2d73;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.feedback-box label {
+  font-size: 50px;
+  color: #333;
+  display: block;
+  margin: 8px 0;
+}
+
+.doctor-box {
+  background-color: paleturquoise;
+  border: 5px solid rgb(166, 126, 203);
+  border-radius: 20px;
+  padding: 40px;
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.doctor-box h2 {
+  color: #4b0082;
+  margin-bottom: 15px;
+}
+
+.doctor-box p {
+  font-size: 40px;
+  color: #333;
+  margin: 10px 0;
+}
+.feedback-doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .feedback-box, .doctor-box {
+    
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+

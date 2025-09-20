@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='result.css')}}">
+</head>
+<body>
+    <h2>Search Results for: <span id="searchQuery"></span></h2>
+    <div id="spinner" class="spinner"></div>
+    <div id="resultsContainer"></div>
+    <p id="noResults" style="display:none;"></p>
+    <a href="/next">Back to Home</a>
+
+    <div class="feedback-doctor-container">
+        <div class="feedback-box">
+            <h2>Experience</h2>
+            <form>
+                <label><input type="radio" name="experience" value="poor"> Poor ☹️</label>
+                <label><input type="radio" name="experience" value="fair"> Fair 😐</label>
+                <label><input type="radio" name="experience" value="good"> Good 🙂</label>
+                <label><input type="radio" name="experience" value="average"> Average 😌</label>
+                <label><input type="radio" name="experience" value="excellent"> Excellent 😃</label>
+            </form>
+        </div>
+
+        <div class="doctor-box">
+            <h2>CONSULT WITH DOCTORS FOR FREE</h2>
+            <p>Dr.anushka prajapati - <strong>+91 8882300125</strong></p>
+            <p>Dr.Gungun Mehra - <strong>+91 7053222181</strong></p>
+            <p>Dr.Khushi  Singh - <strong>+91 7982429424</strong></p>
+            <p>Dr. AYRA SHARMA- <strong>+91 8851139303</strong></p>
+            <p>Dr.mishika dubey - <strong>+91 9625406492</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param) || '';
+        }
+
+        const keyword = getQueryParam('keyword');
+document.getElementById('searchQuery').textContent = keyword;
+
+const spinner = document.getElementById('spinner');
+spinner.style.display = 'block'; // Show spinner
+
+fetch(`/api/fetch_data?keyword=${encodeURIComponent(keyword)}`)
+    .then(response => response.json())
+    .then(data => {
+        spinner.style.display = 'none'; // Hide spinner
+
+        const resultsContainer = document.getElementById('resultsContainer');
+        const noResults = document.getElementById('noResults');
+                if (data.response) {
+                    const p = document.createElement('div');
+                    p.classList.add('result-box');
+                    const cleanText = data.response
+    .replace(/\*/g, '')        
+    .replace(/_/g, '')         
+    .replace(/#/g, '')       
+    .replace(/\n/g, '<br>');   
+
+p.innerHTML = cleanText;
+                    resultsContainer.appendChild(p);
+                } else {
+                    noResults.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching search results:', error);
+                document.getElementById('noResults').style.display = 'block';
+            });
+    </script>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>  
+</body>
+</html>
+

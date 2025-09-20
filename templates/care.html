@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> INNER FEELINGS</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    
+    </head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 1500px;
+			margin: 40px auto;
+			margin-left: 100px;
+			margin-right: 100px;
+			padding: 20px;
+			background-color: #f8eded;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px plum;
+            border-radius: 20px;
+		}
+		h2{
+			text-align: center;
+		}
+		.header {
+			background-color:pink;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+            border-radius: 20px;
+		}
+		.content {
+			padding: 20px;
+		}
+		 p
+		 {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+		
+		a {
+			text-decoration: none;
+
+		}
+		
+		a:hover {
+			color: yellow;
+		}
+	
+        h1{
+            color: purple;
+            font-size: xx-large;
+        }
+		.social-media-icons {
+    display: flex;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.social-media-icons a {
+    align-items: center;
+}
+		.box {
+			width: 45%;
+			margin-left: 390px;
+			margin-right: 500px;
+			 padding: 20px;
+			  background-color: plum;
+			  border: 1px solid #ddd;
+			  border-radius: 20px;
+			  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+	</style>
+	<body>
+        <nav>
+			<div id="nevbar">
+				  <a id="logo" href="{{url_for('static',filename='calm_girls/logo.jpg.jpeg')}}" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+					<img src="{{ url_for('static', filename='calm_girls/logo.jpg.jpeg') }}" alt="Logo" class="logo-image" style="height: 40px; border-radius: 50%;">
+					<span style="color: white; font-weight: bold;  font-size: 20px;">Inner Feelings</span>
+				  </a>
+	
+	
+				<div class="icon">
+					<a href="{{url_for('home')}}" data-hover="inner feelings">Home</a>
+					
+					<a href="{{url_for('about')}}"data-hover="1.Menstrual Awareness
+					2.meaning of Menstruation?
+					3.Menstruation Day 
+					4.Menstruation phases
+					5.regular symptoms
+					6.Our period Mission
+					7.Our Team">About us</a>
+					<a href="{{url_for('images')}}"data-hover=
+					"Aayurvedic Remedies
+					 history of Aayurved ">Images</a>
+					<a href="{{url_for('care')}}" data-hover="1.Prioritize your health
+					 2.Sanitary pads use
+					 3.Clean yourself daily
+					 4.Green tea with tulsi
+					 5.Warm water drink
+					 6.Dark chocolate 
+					 7.Vitamin(Fresh Fruit) 
+					 8.Iron (food) 
+					 9.Magnesium (Food) 
+					 10.Contact Us
+					">Care</a>
+					<a href="{{url_for('signin')}}" data-hover="signin please ">Singup</a>
+			<a href="{{url_for('signup')}}" data-hover="signup please ">singin</a>
+			
+		
+	
+	
+				</div>	
+			</div>
+		</nav>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Prioritize your health</h1>
+		</div>
+				
+		<div class="content">
+			<h2>Sanitary pads</h2>
+			<p>"It's essential for women to choose and use pads correctly. Incorrect usage can lead to health issues, including cancer. So be cautious and prioritize your health.
+			</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/pad.jpg')}}" alt="Sanitary pads">
+				<br><br>
+				
+			</div>
+			<h2>Clean your body everyday</h2>
+				<p> Bathing provides relaxation to the body and reduces muscle tension. Bathing also maintains bodily hygiene and alleviates discomfort during menstruation.</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/bath.jpg')}}" alt="bath">	
+			</div> 
+			<h2>Green tea</h2>
+				<p> Drinking green tea protects the body from oxidative stress due to antioxidants.</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/about_tea.jpg')}}" alt="green tea">	
+			</div>
+			<h2>warm water</h2>
+				<p>Drinking warm water alleviates abdominal issues and relaxes muscles. Warm water also helps keep the body hydrated.</p>	
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/garm pani.jpg')}}" alt="warm water">
+			</div>
+			<h2>Dark chocolate</h2>
+					<p>Eating chocolate helps control mood swings and reduces stress. Chocolate contains flavonoids and magnesium, which can alleviate menstrual symptoms.</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/chocolate.jpg')}}" alt="dark chocolate">	
+			</div>
+			<h2>Vitamin C ( Fresh Fruit)</h2>
+				<p>Vitamin C-rich foods strengthen the immune system and provide relief from menstrual symptoms.</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/vitamin C fruit.jpg')}}" alt="vitamin C fruit">
+			</div>
+			<h2>Iron(food)</h2>
+				<p>Iron-rich foods prevent anemia and maintain energy levels. Iron deficiency can cause fatigue, weakness, and other issues.</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/iron.jpg')}}" alt="iron(food)">
+			</div>
+			<h2>Magnesium (Food)</h2>
+				<p> Consuming magnesium-rich foods relieves abdominal and lower back pain. Magnesium deficiency can exacerbate menstrual symptoms.</p>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/mg.jpg')}}" alt="magnesium (food)">
+			</div>
+			<footer class="footer">
+				<div class="link">
+					<h2>Contact Us</h2>
+					<a href="{{url_for('home')}}">Home</a><br>
+					<a href="{{url_for('about')}}">About us</a><br>
+					<a href="{{url_for('images')}}">Images</a><br>
+					<a href="{{url_for('care')}}">Care</a><br>
+					<a href="{{url_for('signin')}}">Singup  </a>
+					<a href="{{url_for('signup')}}">singin</a>
+			
+		</div>
+
+				<br><br>
+				If you have any questions or suggestions, please don't hesitate to contact us. We're always here to help.<br>
+				<h3>Email: <a href="khushbookumari240607@gmail.com">khushbookumari240607@gmail.com</a></h3>
+				<h3>Phone: <a href="tel:91+8851139303">91+8851139303</a></h3>
+				<a href="https://youtube.com/@menstrupedia?feature=shared">HELPING VIDEOS</a>
+				<br>
+				<div class="social-media-icons">
+					
+					<!-- YouTube -->
+					<a href="https://www.youtube.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/youtube.png" alt="YouTube" />
+					</a>
+					<br>
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+					</a>
+					<br>
+					<!-- Instagram -->
+					<a href="https://www.instagram.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram" />
+					</a>
+					<br>
+					<!-- Twitter -->
+					<a href="https://twitter.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" />
+					</a>
+					<br>
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com/in/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" />
+					</a>
+				</div>
+				We trust that our website will meet your expectations and provide valuable insights into your menstrual health and reproductive well-being. Thank you for choosing us!
+		
+				<h3>&copy; 2025 Inner Feelings Website</h3>
+			
+			</footer>	
+		</div>
+	</div>
+ </body>
+ </html>

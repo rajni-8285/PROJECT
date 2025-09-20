@@ -1,0 +1,175 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-image: url('../static/calm_girls/rajni.jpg');
+	background-size: cover;
+}
+h1{
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+h3{
+	color: rgb(red, green, blue)palevioletred;
+	text-align: center;
+	width: 20px;
+}
+
+p{
+	color: purple;
+}
+
+.doctor-box {
+	background-color: rgb(238, 208, 218);
+	border: 3px solid rgb(98, 4, 98);
+	border-radius: 20px;
+	padding: 80px;
+	width: 1000px;
+	margin: 30px auto;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+	font-size: 20px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+.chat-container {
+	width: 90%;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-size: xx-large;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+
+.chat-header {
+	background-color: plum;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.chat-box {
+	padding: 20px;
+	overflow-y: auto;
+	max-height: 800px;
+	border-bottom: 1px solid #ddd;
+}
+
+.message {
+	margin-bottom: 20px;
+}
+
+.message p {
+	margin-bottom: 10px;
+}
+
+.input-container {
+	padding: 20px;
+	border-top: 1px solid #ddd;
+	font-size: xx-large;
+}
+
+#searchInput {
+	width: 80%;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: xx-large;
+}
+	
+
+
+#send-button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: xx-large;
+}
+
+#problem {
+	width: 50%;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+}
+
+
+label {
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+	color: aquamarine;
+}
+
+input[type="radio"] {
+	text-align: center;
+	margin-right: 10px;
+	color: azure;
+}
+
+span {
+	text-align: center;
+	font-size: 24px;
+	margin-left: 10px;
+}
+.box-container {
+
+	display: flex;
+	border-radius: 5px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+.box{
+	
+	padding: 20px;
+	width: 25%;
+	height: 500px;
+	padding: 10px;
+	border: 10px solid plum;
+	margin-top: 40px;
+	background-color:pink;
+	margin-left: 520px;
+	margin-right:450px ;
+	border-radius: 20px;
+	font-size: xx-large;
+	text-align: left;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+.suggestion-box {
+	background-color:whitesmoke;
+	border: 1px solid #ccc;
+	max-height: 150px;
+	overflow-y: auto;
+	position: absolute;
+	width: 800px;
+	z-index: 200;
+	margin-top: 10px;
+	text-align: left;
+	
+	
+  }
+  
+  .suggestion-item {
+	padding: 8px 12px;
+	cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+	background-color: #f0f0f0;
+  }

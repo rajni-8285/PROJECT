@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat Interface</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='next.css')}}">
+</head>
+<body>
+	
+	<div class="chat-container">
+		<div class="chat-header">
+			<h1>share your inner feeling</h1>
+		</div>
+		<div class="chat-box">
+			<div class="message" id="message-1">
+				<p>Hello! How are you?</p>
+			</div>
+		<div class="social-media-icons">
+			<!-- YouTube -->
+			 <p>Helping social meida link</p>
+			<a href="https://www.youtube.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/youtube.png" alt="YouTube" />
+			</a>
+			<!-- Facebook -->
+			<a href="https://www.facebook.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+			</a>
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram" />
+			</a>
+			<!-- Twitter -->
+			<a href="https://twitter.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" />
+			</a>
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com/in/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" />
+			</a>
+			<div class="message" id="message-2">
+				<p>I am here to help.please share your concerns and i'll assist you."</p>
+				<ul id="chat-list"></ul>
+
+			
+			</div>
+		</div>
+		<form id="searchForm" action="/search" method="GET">
+		<input type="text"
+		id="searchInput" name="keyword"
+		placeholder="Search here..." required autocomplete="off">
+		<div id="suggestions" style="padding: 10px 500px;border: none; border-color: black; "
+		class="suggestion-box"></div>
+		<button type="submit" style="padding: 10px 40px; background-color: rgb(94, 94, 177); border-color: black; font-size: large;">Search</button>
+		</form>
+
+	</div>
+
+	<div class="doctor-box">
+		<h2 style="font-style: italic; font-size: 40px; color: rgb(33, 31, 184);">we are here to help and heal your pain</h2>
+		<p>GUARANTY- <strong> our data is 100% safe and secure.</strong></p>
+		<p>CONNECTION - <strong> we are connected with  top doctors,so are data is authentic.</strong></p>
+		<p>NATURAL TREATMENT- <strong>WE provide solution through home remedies and natural process.</strong></p>
+	</div>
+</div>
+		
+	<script 
+    src="{{url_for('static',filename='script.js')}}"></script>
+</body>
+</html>

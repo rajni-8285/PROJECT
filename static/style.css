@@ -1,0 +1,257 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  nav {
+    animation: slideIn 2s;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }.box-proud {
+    animation: fadeIn 2s;
+  }
+  .proud img {
+  
+    animation: spin 2s;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  }
+  #nevbar .icon a {
+    position: relative;
+
+  }
+  
+  #nevbar .icon a::after {
+    content: attr(data-hover);
+    position: absolute;
+    display: block;
+    right: 0%;
+    width: 300px;
+    background-color:purple;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+    visibility : hidden;
+    transition: all 0.5s ease-in-out;
+    overflow-y: auto;
+    text-align: left;
+  }
+  
+  #nevbar .icon a:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+#name {
+    text-align: center;
+    font-size: 50px;
+    padding: 2em;
+    clear: both;
+    margin-top: 1em;
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    color: plum;
+    text-shadow: rgb(235, 10, 115);
+}
+
+#nevbar {
+    font-size: x-large;
+    height: 70px;
+    background-color: purple;
+    text-align: right;
+    border-radius: 10px;
+}
+
+img {
+    width: xx large;
+
+
+}
+
+a {
+    text-align: center;
+    margin-right: 270px;
+    max-width: 100px;
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+}
+
+h2 {
+    color: purple;
+    text-align: justify;
+}
+
+.icon {
+    text-align: right;
+    color: plum;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../static/calm_girls/background.jpg.png");
+    background-size:contain;
+
+}
+
+nav {
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+#nevbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: purple;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: xx-large;
+    background-color: pink;
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.box {
+    width: 45%;
+    padding: 20px;
+    margin: 20px;
+    background-color: pink;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+p {
+    font-size: xx-large;
+    color: purple;
+    text-align: justify;
+}
+
+.box img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    clear: both;
+    font-size: xx-large;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer a:hover {
+    color: yellow;
+}
+
+.social-media-icons {
+    display: flex;
+    margin-left: 800px;
+    align-items: center;
+
+}
+
+.social-media-icons a {
+    align-items: center;
+}
+
+.social-media-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 1px;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}

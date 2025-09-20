@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> INNER FEELINGS</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    
+    </head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h2{
+			text-align: center;
+		}
+		.social-media-icons {
+    display: flex;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.social-media-icons a {
+    align-items: center;
+}
+		
+		.container {
+			max-width: 1500px;
+			margin: 40px auto;
+			margin-left: 100px;
+			margin-right: 100px;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px plum;
+            border-radius: 20px;
+		}
+		
+		.header {
+			background-color:pink;
+			color: #fff;
+			padding: 10px;
+			text-align: justify;
+            border-radius: 20px;
+		}
+
+		.content {
+			padding: 20px;
+		}
+		
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		li {
+			margin-bottom: 50px;
+		}
+        p{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+		
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.image {
+			width: 500px;
+			height: 450px;
+			margin: 10px;
+			border: 1px solid #ddd;
+			padding: 5px;
+		}
+        li{
+            font-size: xx-large;
+            color: blueviolet;
+        }
+		
+		.image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+        h1{
+            color: purple;
+            font-size: xx-large;
+        }
+	</style>
+    
+    <body>
+        <nav>
+			<div id="nevbar">
+				  <a id="logo" href="{{url_for('static',filename='calm_girls/logo.jpg.jpeg')}}" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+					<img src="{{ url_for('static', filename='calm_girls/logo.jpg.jpeg') }}" alt="Logo" class="logo-image" style="height: 40px; border-radius: 50%;">
+					<span style="color: white; font-weight: bold;  font-size: 20px;">Inner Feelings</span>
+				  </a>
+	
+	
+				<div class="icon">
+					<a href="{{url_for('home')}}" data-hover="inner feelings">Home</a>
+					
+					<a href="{{url_for('about')}}"data-hover="1.Menstrual Awareness
+					2.meaning of Menstruation?
+					3.Menstruation Day 
+					4.Menstruation phases
+					5.regular symptoms
+					6.Our period Mission
+					7.Our Team">About us</a>
+					<a href="{{url_for('images')}}"data-hover=
+					"Aayurvedic Remedies
+					 history of Aayurved ">Images</a>
+					<a href="{{url_for('care')}}" data-hover="1.Prioritize your health
+					 2.Sanitary pads use
+					 3.Clean yourself daily
+					 4.Green tea with tulsi
+					 5.Warm water drink
+					 6.Dark chocolate 
+					 7.Vitamin(Fresh Fruit) 
+					 8.Iron (food) 
+					 9.Magnesium (Food) 
+					 10.Contact Us
+					">Care</a>
+					<a href="{{url_for('signin')}}" data-hover="signin please ">Singup</a>
+			<a href="{{url_for('signup')}}" data-hover="signup please ">singin</a>
+			
+		
+	
+	
+                </div>     
+            </div>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Menstruation Awareness</h1>
+		</div>
+		<div class="content">
+			<h2>About Us</h2>
+			<p>Our website (INNER FEELINGS) provides a safe and supportive platform for women to access information and resources related to menstruation. you'll find a collection of natural and Ayurvedic herbs that can help alleviate various menstrual health issues and problems in women or girls. </p>
+			<img src="{{url_for('static',filename='calm_girls/pagal.jpg.jpg')}}" alt="aayurvedic remedies" class="image">
+			<img src="{{url_for('static',filename='calm_girls/babu.jpg')}}" alt="baby girl" class="image">
+			<h2>What is Menstruation?</h2>
+			<p>Menstruation is a natural process that occurs in women's bodies, where the uterus sheds its lining, resulting in bleeding. This process typically occurs every 28 days, but can vary from woman to woman.</p>
+			<img src="{{url_for('static',filename='calm_girls/aware.jpg')}}" alt="awareness" class="image">
+			<h2>Menstruation day</h2>
+			<p>Menstruation Day or Menstrual Awareness Day is observed every year on May 28th. This day is celebrated to raise awareness about menstruation and promote women's health and well-being. During this day, various organizations and communities organize different programs to raise awareness about menstruation. These programs include education about menstruation, access to health services, and protection of women's rights. With a focus on addressing these issues, we are creating this website to solve all the problems faced by women related to menstruation and provide them with a safe and supportive platform.</p>
+			<img src="{{url_for('static',filename='calm_girls/day.jpg')}}" alt="Menstruation Day" class="image">
+			<h2>Phases of Menstruation</h2>
+			<ul>
+				<p><strong>Menstrual Preparation</strong>: Hormonal changes prepare the body for menstruation.<br><strong>Bleeding</strong>: The uterus sheds its lining, resulting in bleeding that exits the vagina.<br><strong>Cleaning</strong>: The body undergoes a cleaning process, where the uterine lining is shed.<br></be><strong>Healing</strong>: The body heals and regenerates the uterine lining.</p>
+			</ul>
+			<img src="{{url_for('static',filename='calm_girls/about_pain.jpg')}}" alt="Phases of Menstruation" class="image">
+			<h2>Symptoms of Menstruation</h2>
+				<p>Abdominal pain<br>Fatigue<br>Mood swings<br>Changes in appetite<br>Breast tenderness</p>
+			<img src="{{url_for('static',filename='calm_girls/about symtoms.jpg')}}" alt="Symptoms of Menstruation" class="image">
+			<h2>Health Tips During Menstruation</h2>
+			<ul>
+				<p>Drink plenty of water<br>Eat a balanced diet<br>Exercise regularly<br>Reduce stress</br>Get enough sleep<Drink a green tea</p>
+			</ul>
+                <img src="{{url_for('static',filename='calm_girls/about_tea.jpg')}}" alt="Health Tips During Menstruation" class="image">
+                <h2>Our Mission</h2>
+                <p>Our website is a safe, supportive, and informative platform for women, providing information and solutions related to their menstrual cycle, reproductive health, and emotional well-being.
+                    Our goal is to empower every woman with complete knowledge and respect for her body and emotions, and to help her feel confident, empowered, and happy in her life.
+                    <br>
+                    At Inner Feelings, we provide you with information related to menstruation, health tips, and emotional support. Our goal is to make you aware and empowered about your health and well-being."
+                    </p>
+                <img src="{{url_for('static',filename='calm_girls/misston.jpg')}}" alt="Our Mission" class="image">
+                <h2>Our Team</h2>
+                <p>Our team consists of young and enthusiastic individuals dedicated to raising awareness about women's health and hygiene. We have worked together to create this website, providing helpful information and resources to support women's health during their menstrual cycles. Our team consists of experienced professionals who specialize in women's health and well-being.</p>
+                
+				<footer class="footer">
+					Comprehensive information and solutions<br>
+					Expert advice and remedies<br>
+					Personalized guidance and support<br>
+					A safe and supportive platform<br><br>
+					<div class="link">
+						<a href="{{url_for('home')}}">Home</a><br>
+					<a href="{{url_for('about')}}">About us</a><br>
+					<a href="{{url_for('images')}}">Images</a><br>
+					<a href="{{url_for('care')}}">Care</a><br>
+					<a href="{{url_for('signin')}}">Singup  </a>
+		<a href="{{url_for('signup')}}">singin</a>
+
+					</div>
+					
+					<br>
+					If you have any questions or suggestions, please don't hesitate to contact us. We're always here to help.
+					<h3>Email: <a href="vanshika272006@gmail.com">vanshika272006@gmail.com</a></h3>
+					<h3>Phone: <a href="tel:91+7982429424">91+7982429424</a></h3>
+					<a href="https://youtube.com/@menstrupedia?feature=shared">HELPING VIDEOS</a>
+					<div class="social-media-icons">
+						
+						<!-- YouTube -->
+						<a href="https://www.youtube.com/@menstrupedia?feature=shared" target="_blank">
+							<img src="https://img.icons8.com/color/48/000000/youtube.png" alt="YouTube" />
+						</a>
+						<br>
+						<!-- Facebook -->
+						<a href="https://www.facebook.com/@menstrupedia?feature=shared" target="_blank">
+							<img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+						</a>
+						<br>
+						<!-- Instagram -->
+						<a href="https://www.instagram.com/@menstrupedia?feature=shared" target="_blank">
+							<img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram" />
+						</a>
+						<br>
+						<!-- Twitter -->
+						<a href="https://twitter.com/@menstrupedia?feature=shared" target="_blank">
+							<img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" />
+						</a>
+						<br>
+						<!-- LinkedIn -->
+						<a href="https://www.linkedin.com/in/@menstrupedia?feature=shared" target="_blank">
+							<img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
+					We trust that our website will meet your expectations and provide valuable insights into your menstrual health and reproductive well-being. Thank you for choosing us!
+			
+					<h3>&copy; 2025 Inner Feelings Website</h3>
+					
+				</footer>
+		</div>
+			</div>
+			</div>
+		</div>
+	 </body>
+	 </html>

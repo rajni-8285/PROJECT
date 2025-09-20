@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> INNER FEELINGS</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    
+    </head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			max-width: 1500px;
+			margin: 40px auto;
+			margin-left: 100px;
+			margin-right: 100px;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #dddddd;
+			box-shadow: 0 0 10px plum;
+            border-radius: 20px;
+		}
+		.social-media-icons {
+    display: flex;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.social-media-icons a {
+    align-items: center;
+}
+		
+		.header {
+			background-color:pink;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+            border-radius: 20px;
+		}
+
+		.content {
+			padding: 20px;
+		}
+
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		li {
+			margin-bottom: 50px;
+		}
+        p{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+		
+		a {
+			text-decoration: none;
+
+		}
+		
+		a:hover {
+			color: #f9f9f9;
+		}
+		
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.image {
+			width: 650px;
+			height: 450px;
+			margin: 10px;
+			border: 1px solid #ddd;
+			padding: 5px;
+		}
+		h3{
+			font-size: xx-large;
+		}
+        li{
+    
+            color: purple;
+			background-color: blanchedalmond;
+			height: 50px;
+			margin-left: 40px;
+			margin-right: 60px;
+			font-size: 35px;
+			text-align: center;
+			border-radius: 30px;
+        }
+		h2{
+			height: 60px;
+			margin-left: 70px;
+			margin-right: 70px;
+			font-size: 40px;
+			text-align: center;
+
+
+		}
+		
+		.image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+        h1{
+            color: purple;
+            font-size: 60px;
+			max-width: 1000px;
+        }
+	</style>
+    
+    <body>
+        <nav>
+			<div id="nevbar">
+				  <a id="logo" href="{{url_for('static',filename='calm_girls/logo.jpg.jpeg')}}" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+					<img src="{{ url_for('static', filename='calm_girls/logo.jpg.jpeg') }}" alt="Logo" class="logo-image" style="height: 40px; border-radius: 50%;">
+					<span style="color: white; font-weight: bold;  font-size: 20px;">Inner Feelings</span>
+				  </a>
+	
+	
+				<div class="icon">
+					<a href="{{url_for('home')}}" data-hover="inner feelings">Home</a>
+					
+					<a href="{{url_for('about')}}"data-hover="1.Menstrual Awareness
+					2.meaning of Menstruation?
+					3.Menstruation Day 
+					4.Menstruation phases
+					5.regular symptoms
+					6.Our period Mission
+					7.Our Team">About us</a>
+					<a href="{{url_for('images')}}"data-hover=
+					"Aayurvedic Remedies
+					 history of Aayurved ">Images</a>
+					<a href="{{url_for('care')}}" data-hover="1.Prioritize your health
+					 2.Sanitary pads use
+					 3.Clean yourself daily
+					 4.Green tea with tulsi
+					 5.Warm water drink
+					 6.Dark chocolate 
+					 7.Vitamin(Fresh Fruit) 
+					 8.Iron (food) 
+					 9.Magnesium (Food) 
+					 10.Contact Us
+					">Care</a>
+					<a href="{{url_for('signin')}}" data-hover="signin please ">Singup</a>
+			<a href="{{url_for('signup')}}" data-hover="signup please ">singin</a>
+			
+		
+	
+	
+				</div>	
+			</div>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Aayurvedic Remedies </h1>
+		</div>
+		<div class="content">
+			<h2>aayurvedic</h2>
+			<p>On our website, you'll find a collection of natural and Ayurvedic herbs that can help alleviate various menstrual health issues and problems in women. Our herbs are completely natural and safe, helping to improve your overall health. Our goal is to help you stay healthy through natural and Ayurvedic means. By using our herbs, you can improve your health and be inspired to live a healthier life.</p>
+			<img src="{{url_for('static',filename='calm_girls/rishi.jpg')}}" alt="bhartiya sanskriti" class="image"><h3>bhartiya sanskriti</h3>
+			<h2>history of aayurvedic</h2>
+			<p>Herbal remedies have been used for menstrual health since ancient times. In ancient civilizations such as Egypt, Greece, and China, herbs were used to alleviate menstrual cramps, bleeding, and other issues. Some prominent herbs include ashwagandha, shatavari, and cinnamon, which help mitigate menstrual problems. These herbs are still used today and provide relief from menstrual issues.</p>
+			<img src="{{url_for('static',filename='calm_girls/daalchini_cinnamon.jpg')}}" alt="daalchini" class="image"><h3>Daalchini</h3>
+            <ul><li><strong>Daalchini(cinnamon)</strong>: Reduces menstrual cramps, controls bleeding.</li></ul>
+
+			<img src="{{url_for('static',filename='calm_girls/tulsi.jpg')}}" alt="tulsi" class="image"><h3>Tulsi</h3>
+            <ul><li><strong>Tulsi</strong>: Reduces stress and anxiety, relaxes the body.</li></ul>
+
+            <img src="{{url_for('static',filename='calm_girls/kutki.jpg')}}" alt="kutki" class="image"><h3>Kutki</h3>
+			<ul>			
+				<li><strong>Kutki</strong>:  Regulates hormonal imbalance and reduces menstrual cramps.</li>
+			</ul>
+			<img src="{{url_for('static',filename='calm_girls/ashwagandha.jpg')}}" alt="ashwagandha" class="image"><h3>Ashwagandha</h3>
+            <ul><li><strong>Ashwagandha</strong>: Reduces stress and anxiety, relaxes the body.</li></ul>
+
+            <img src="{{url_for('static',filename='calm_girls/akhar khrab.jpg')}}" alt="Akarkarabh" class="image"><h3>Akhar khrab</h3>
+
+			<ul>
+				
+				<li><strong>Akarkarabh</strong>: Reduces pain and inflammation during menstruation.</li>
+				
+			</ul>
+			<img src="{{url_for('static',filename='calm_girls/satavri.jpg')}}" alt="satavri" class="image"><h3>Satavri</h3>
+            <ul><li><strong>Satavri</strong>: Controls bleeding, strengthens uterine muscles.</li></ul>
+
+            <img src="{{url_for('static',filename='calm_girls/sho_fennel.jpg')}}" alt="shop" class="image"><h3>shop(fennel)</h3>
+			<ul>
+				
+				<li><strong>Shop(fennel)</strong>:Controls bleeding, strengthens uterine muscles.</li>
+				
+			</ul>
+			<footer class="footer">
+				<div class="link">
+					<h2>Contact Us</h2>
+					<a href="{{url_for('home')}}">Home</a><br>
+		<a href="{{url_for('about')}}">About us</a><br>
+		<a href="{{url_for('images')}}">Images</a><br>
+		<a href="{{url_for('care')}}">Care</a><br>
+		<a href="{{url_for('signin')}}">Singup  /</a>
+		<a href="{{url_for('signup')}}">singin</a>
+
+		</div>
+
+				<br><br>
+				If you have any questions or suggestions, please don't hesitate to contact us. We're always here to help.<br>
+				<h3>Email: <a href="riyaprajapati624@gmail.com">riyaprajapati624@gmail.com</a></h3>
+				<h3>Phone: <a href="tel:91+7992198370">91+7992198370</a></h3>
+				<a href="https://youtube.com/@menstrupedia?feature=shared">HELPING VIDEOS</a>
+				<br>
+				<div class="social-media-icons">
+					
+					<!-- YouTube -->
+					<a href="https://www.youtube.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/youtube.png" alt="YouTube" />
+					</a>
+					<br>
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+					</a>
+					<br>
+					<!-- Instagram -->
+					<a href="https://www.instagram.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram" />
+					</a>
+					<br>
+					<!-- Twitter -->
+					<a href="https://twitter.com/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" />
+					</a>
+					<br>
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com/in/@menstrupedia?feature=shared" target="_blank">
+						<img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" />
+					</a>
+				</div>
+				We trust that our website will meet your expectations and provide valuable insights into your menstrual health and reproductive well-being. Thank you for choosing us!
+		
+				<h3>&copy; 2025 Inner Feelings Website</h3>
+			
+			</footer>	
+		</div>
+	</div>
+ </body>
+ </html>

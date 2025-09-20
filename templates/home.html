@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> INNER FEELINGS</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<style>
+
+.box-proud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+h1{
+	font-family: 'Times New Roman', Times, serif;
+    color: purple;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 70px;
+	font-weight: bold;
+}
+h3{
+	color: aliceblue;
+	font-size: xx-large;
+}
+
+
+
+.proud {
+    width: 45%;
+    margin: 20px;
+	height: 770px;
+    padding: 20px;
+    background-color:rgb(230, 168, 230);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+}
+
+p {
+    font-size: xx-large;
+    color: purple;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: left;
+	border-radius: 40px;
+}
+</style>
+<body>
+	<nav>
+		<div id="nevbar">
+		  	<a id="logo" href="{{url_for('static',filename='calm_girls/logo.jpg.jpeg')}}" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+				<img src="{{ url_for('static', filename='calm_girls/logo.jpg.jpeg') }}" alt="Logo" class="logo-image" style="height: 40px; border-radius: 50%;">
+				<span style="color: white; font-weight: bold;  font-size: 20px;">Inner Feelings</span>
+			  </a>
+
+
+			<div class="icon">
+				<a href="{{url_for('home')}}" data-hover="inner feelings">Home</a>
+				
+				<a href="{{url_for('about')}}"data-hover="1.Menstrual Awareness
+				2.meaning of Menstruation?
+				3.Menstruation Day 
+				4.Menstruation phases
+				5.regular symptoms
+				6.Our period Mission
+				7.Our Team">About us</a>
+				<a href="{{url_for('images')}}"data-hover=
+				"Aayurvedic Remedies
+				 history of Aayurved ">Images</a>
+				<a href="{{url_for('care')}}" data-hover="1.Prioritize your health
+				 2.Sanitary pads use
+				 3.Clean yourself daily
+				 4.Green tea with tulsi
+				 5.Warm water drink
+				 6.Dark chocolate 
+				 7.Vitamin(Fresh Fruit) 
+				 8.Iron (food) 
+				 9.Magnesium (Food) 
+				 10.Contact Us
+				">Care</a>
+				<a href="{{url_for('signin')}}" data-hover="signin please ">Singup</a>
+		<a href="{{url_for('signup')}}" data-hover="signup please ">singin</a>
+		
+	
+
+
+			</div>	
+		</div>
+	</nav>
+	<header>
+		<div class="box-proud">
+			<div class="proud">
+				<h1>INNER FEELINGS</h1>
+				<img src="{{url_for('static',filename='calm_girls/flower mom.jpg')}} " alt="proud">
+				<br><br>
+				<p>I'm proud of my periods because I want to be a mother.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="box">
+				<h2>We assure you that our website will provide a safe and supportive environment, helping you understand your body and emotions. We promise to deliver:
+				</h2>
+			</div>
+			<div class="box">
+				<h2>Expert advice and remedies for all types of illnesses, helping you understand your body and emotions.</h2>
+			</div>
+			<div class="box">
+				<h2>Access to ayurvedic and natural remedies, empowering you to maintain a healthy and balanced lifestyle.</h2>
+			</div>
+			<div class="box">
+				<h2>Personalized guidance and support, ensuring your physical and emotional well-being.</h2>
+			</div>
+			<div class="box">
+				<h2>Monthly updates on new and interesting information, helping you make positive changes in your life.</h2>
+			</div>
+			<div class="box">
+				<h2>A supportive and informative platform, providing comprehensive information and solutions for your menstrual health and reproductive health.
+				</h2>
+			</div>
+			<div class="box">
+				<h2>A safe and supportive platform, where you can ask questions and receive answers and solutions.</h2>
+			</div>
+		</div>
+	</header>
+	<header>
+		<div class="box-container">
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/happy_khushi.jpg')}}" alt="happiness">
+				<br><br>
+				<h2>Beauty</h2>
+				<p>Beauty lies in embracing your natural self, including your menstrual cycle. By accepting and caring for your body, you'll find true beauty and confidence within.
+				</p>
+			</div>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/blue_stone.jpg')}}" alt="calm">
+					<br><br>
+					<h2>calm</h2>
+					<p>Menstruation is a divine gift, empowering women with the strength of motherhood. Embrace it with pride and respect the power of your body!</p>
+			</div>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/womwn_pain.jpg')}}" alt="periods pain">
+				<br><br>
+				<h2>pain</h2>
+				<p>Don't hide your menstrual pain, instead seek help and support to overcome it. Your health and happiness are in your hands.
+
+				</p>
+			</div>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/happy.jpg')}}" alt="healthy girl">
+				<br><br>
+				<h2>happiness</h2>
+				<p>You can still be happy and healthy during your periods! Prioritize your joy and well-being, and make time for activities that bring you happiness.
+
+				</p>
+			</div>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/calm.jpg')}}" alt="yoga">
+				<br><br>
+				<h2>care</h2>
+				<p>Practicing yoga during menstruation not only provides relief from pain, but also improves your physical and mental well-being. So, let's incorporate yoga into our lives and stay healthy!
+				</p>
+			</div>
+			<div class="box">
+				<img src="{{url_for('static',filename='calm_girls/school.jpg')}}" alt="education or working">
+				<br><br>
+				<h2>education</h2>
+				<p>Take care of your health, stay engaged during isolation, and focus on education and work to achieve your dreams. Your health and success are in your hands!
+				</p>
+				
+			</div>
+			
+		</div>
+	</header>
+
+	<footer class="footer">
+		Comprehensive information and solutions<br>
+		Expert advice and remedies<br>
+		Personalized guidance and support<br>
+		A safe and supportive platform<br><br>
+		<div class="link">
+			<a href="{{url_for('home')}}" data-hover="inner feelings">Home</a><br>
+		<a href="{{url_for('about')}}"data-hover="Wenstrual Awareness
+		What is Menstruation?
+		Menstruation Day
+		Phases of Menstruation
+		Symptoms of Menstruation
+		Our Mission
+		Our Team">About us</a><br>
+		<a href="{{url_for('images')}}"data-hover=
+		"Aayurvedic Remedies
+		 history of Aayurvedic ">Images</a><br>
+		<a href="{{url_for('care')}}">Care</a><br>
+		<a href="{{url_for('signin')}}">Singup  </a>
+		<a href="{{url_for('signup')}}">singin</a>
+
+		</div>
+		
+		<br>
+		If you have any questions or suggestions, please don't hesitate to contact us. We're always here to help.
+		<h3>Email: <a href="vanshika272006@gmail.com">vanshika272006@gmail.com</a></h3>
+		<h3>Phone: <a href="tel:91+7982429424">91+7982429424</a></h3>
+		<a href="https://youtube.com/@menstrupedia?feature=shared">HELPING VIDEOS</a>
+		<div class="social-media-icons">
+			
+			<!-- YouTube -->
+			<a href="https://www.youtube.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/youtube.png" alt="YouTube" />
+			</a>
+			<br>
+			<!-- Facebook -->
+			<a href="https://www.facebook.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+			</a>
+			<br>
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/instagram.png" alt="Instagram" />
+			</a>
+			<br>
+			<!-- Twitter -->
+			<a href="https://twitter.com/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" />
+			</a>
+			<br>
+			<!-- LinkedIn -->
+			<a href="https://www.linkedin.com/in/@menstrupedia?feature=shared" target="_blank">
+				<img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" />
+			</a>
+		</div>
+		We trust that our website will meet your expectations and provide valuable insights into your menstrual health and reproductive well-being. Thank you for choosing us!
+
+		<h3>&copy; 2025 Inner Feelings Website</h3>
+		
+	</footer>
+	<script src="{{url_for('static',filename='index.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signin</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='signin.css')}}">
+</head>
+<body>
+    <form method="POST" action="/signin">
+	<div class="container">
+		<div class="signin-form">
+			<h1>Sign up</h1>
+			
+				<label for="name">Name:</label>
+				<input type="text" placeholder="user name"id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="email"placeholder="@gmail.com" id="email" name="email"><br><br>
+				<label for="password">Password:</label>
+				<input type="password"placeholder="******" id="password" name="password"><br><br>
+                <label for="city">city:</label>
+                <select id="city" name="city" >
+					<option value=" "></option>
+					<option value="greater-noida">Greater Noida</option>
+					<option value="noida">noida</option>
+					<option value="ghaziabad">Ghaziabad</option>
+					<option value="faridabad">Faridabad</option>
+					<option value="meerut">Meerut</option>
+					<option value="agra">Agra</option>
+					<option value="gurugram">Gurugram</option>
+					<option value="mumbai">Mumbai</option>
+					<option value="bangalore">Bangalore</option>
+					<option value="hyderabad">Hyderabad</option>
+					<option value="chennai">Chennai</option>
+					<option value="kolkata">Kolkata</option>
+					<option value="pune">Pune</option>
+					<option value="ahmedabad">Ahmedabad</option>
+					<option value="surat">Surat</option>
+					<option value="jaipur">Jaipur</option>
+					<option value="lucknow">Lucknow</option>
+					<option value="kanpur">Kanpur</option>
+					<option value="nagpur">Nagpur</option>
+					<option value="indore">Indore</option>
+					<option value="bhopal">Bhopal</option>
+					<option value="visakhapatnam">Visakhapatnam</option>
+					<option value="patna">Patna</option>
+					<option value="ludhiana">Ludhiana</option>
+					<option value="agra">Agra</option>
+					<option value="varanasi">Varanasi</option>
+					<option value="allahabad">Allahabad</option>
+					<option value="jodhpur">Jodhpur</option>
+					<option value="kota">Kota</option>
+					<option value="gwalior">Gwalior</option>
+					<option value="jabalpur">Jabalpur</option>
+					<option value="amritsar">Amritsar</option>
+					<option value="chandigarh">Chandigarh</option>
+					<option value="jamshedpur">Jamshedpur</option>
+					<option value="bhubaneswar">Bhubaneswar</option>
+					<option value="coimbatore">Coimbatore</option>
+					<option value="madurai">Madurai</option>
+					<option value="trichy">Trichy</option>
+					<option value="salem">Salem</option>
+					<option value="tirunelveli">Tirunelveli</option>
+					<option value="erode">Erode</option>
+					<option value="vellore">Vellore</option>
+					<option value="thiruvananthapuram">Thiruvananthapuram</option>
+					<option value="kochi">Kochi</option>
+					<option value="kozhikode">Kozhikode</option>
+					<option value="thrissur">Thrissur</option>
+                </select>
+                
+				<br><br>
+			
+					<button type="submit"style="padding: 8px 16px; background-color:green; white; border:none;">
+					 submit & Next </button>
+				</a>
+			</form>
+		</div>
+	</div>
+	<div style="text-align: center; margin-top: 15px;">
+		<a href="{{ url_for('signup') }}">
+			<button type="button" style="padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">
+				Create New Account
+			</button>
+		</a>
+	</div>
+	
+	<script 
+    src="{{url_for('static',filename='signin.js')}}"></script>
+</body>
+</html>
